@@ -27,10 +27,10 @@
         ;; ...or by using the function CONS.
         (names (cons "Matthew" (cons "Mark" (cons "Margaret" '())))))
     ;; Try filling in the below blanks in different ways.
-    (assert-equal ____ fruits)
-    (assert-equal ____ some-evens)
-    (assert-equal ____ long-numbers)
-    (assert-equal ____ names)))
+    (assert-equal (cons 'orange (cons 'pomello (cons 'clementine '()))) fruits)
+    (assert-equal '(2 4 6) some-evens)
+    (assert-equal (list 16487302 3826700034 10000000) long-numbers)
+    (assert-equal '("Matthew" . ("Mark" . ("Margaret". nil))) names)))
 
 (define-test cons-tructing-lists
   ;; The function CONS can be used to add new elements at the beginning of
